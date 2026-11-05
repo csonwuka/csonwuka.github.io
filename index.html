@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sam Onwuka · AI Researcher</title>
+<meta name="description" content="Portfolio, research and writing by Samuel Onwuka.">
+<!-- <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'%3E%3Crect x='1.5' y='1.5' width='93' height='93' rx='21' fill='%23FBF8F1' stroke='%231F6F54' stroke-width='3'/%3E%3Cpath d='M16 35l9 10-9 10' fill='none' stroke='%231F6F54' stroke-width='5.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M59 38C56 32 36 31 36 40C36 48 59 44 59 52C59 60 40 60 35 55' fill='none' stroke='%231F6F54' stroke-width='5.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M65 61H81' fill='none' stroke='%231F6F54' stroke-width='5.5' stroke-linecap='round'/%3E%3C/svg%3E"> -->
+<link rel="icon" href="images/favicon-green.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FBF8F1}
+a{color:#18181B}a:hover{color:#1F6F54 !important}
+a:focus-visible{outline:2px solid #1F6F54;outline-offset:3px;border-radius:2px}
+.sect{scroll-margin-top:12px}
+.type{display:inline-block;border-right:2px solid transparent;padding-right:2px;min-height:1em;vertical-align:bottom;white-space:pre-wrap}
+.caret{border-right-color:#1F6F54}
+.media{width:160px;max-width:100%;aspect-ratio:1/1;flex-shrink:0;overflow:hidden;background:#F1EDE3;border:1px solid #E6E2D8;border-radius:4px}
+.media.round{border-radius:50%}
+.media img,.media video{display:block;width:100%;height:100%;object-fit:cover}
+.media.round img{object-position:50% 0%}
+.ic:hover{border-color:#1F6F54}
+.nav-toggle{display:none}
+.burger{display:none;width:44px;height:44px;border:1px solid #E6E2D8;border-radius:50%;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer}
+.burger i{display:block;width:18px;height:2px;border-radius:2px;background:#18181B;transition:transform .2s}
+#nt:checked ~ .burger i:first-child{transform:translateY(4px) rotate(45deg)}
+#nt:checked ~ .burger i:last-child{transform:translateY(-4px) rotate(-45deg)}
+#nt:focus-visible ~ .burger{outline:2px solid #1F6F54;outline-offset:2px}
+.hero-photo{order:2}
+@media (max-width:720px){
+.nav-toggle{display:block}
+.burger{display:flex}
+.nav{display:none !important;flex-basis:100%;flex-direction:column;gap:0 !important;background:#F1EDE3;border-radius:12px;padding:6px 18px;order:3}
+#nt:checked ~ .nav{display:flex !important}
+.nav a{padding:12px 0;font-size:16px}
+.hero{gap:32px !important;padding-top:56px !important}
+.hero-photo{order:-1 !important;width:168px !important;margin:0 auto !important}
+.hero-ring{transform:translate(7px,-7px) !important}
+.hero-h1{font-size:40px !important}
+}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto}
+.burger i{transition:none}
+}
+</style>
+</head>
+<body>
+<div id="top" style="background:#FBF8F1;color:#18181B;font-family:'JetBrains Mono',ui-monospace,Menlo,monospace;box-sizing:border-box;padding:0 20px">
+<div style="max-width:1120px;margin:0 auto">
+<header class="hdr" style="position:relative;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding:16px 0;font-size:14px">
+<a href="#top" style="font-weight:600;text-decoration:none">~/sam_</a>
+<input type="checkbox" id="nt" class="nav-toggle" aria-label="Toggle menu" style="position:absolute;right:0;top:16px;width:44px;height:44px;margin:0;opacity:0;cursor:pointer;z-index:2">
+<label for="nt" class="burger"><i></i><i></i></label>
+<nav class="nav" style="display:flex;gap:20px;flex-wrap:wrap"><a href="#about" style="text-decoration:none">about</a><a href="#skills" style="text-decoration:none">skills</a><a href="#experience" style="text-decoration:none">experience</a><a href="#projects" style="text-decoration:none">projects</a><!-- <a href="#research" style="text-decoration:none">research</a> --><a href="#education" style="text-decoration:none">education</a><!-- <a href="#blog" style="text-decoration:none">blog</a> --><a href="#contact" style="text-decoration:none">contact</a></nav>
+</header>
+<section class="hero" style="padding:96px 0 0;display:flex;flex-wrap:wrap;gap:48px;justify-content:space-between;align-items:center"><div class="hero-photo" style="position:relative;width:300px;max-width:100%;aspect-ratio:1/1;flex-shrink:0"><div class="hero-ring" style="position:absolute;top:0;left:0;right:0;bottom:0;box-sizing:border-box;background:#FBF8F1;border:2px solid #1F6F54;border-radius:50%;transform:translate(11px,-11px)"></div><div class="media round" data-src="images/me.jpg" data-alt="Portrait of [Your Name]" style="position:relative;width:100%;height:100%"></div></div><div class="hero-text" style="flex:1 1 400px">
+<div style="font-size:14px;color:#62626A;margin-bottom:28px"><span class="type hero-type">~/whoami</span></div>
+<h1 class="hero-h1" style="margin:0;font-size:56px;line-height:1.05;font-weight:500;letter-spacing:-0.05em">Samuel Onwuka</h1>
+<div style="font-size:20px;color:#62626A;margin:12px 0 28px">AI Researcher | ML Engineer</div> <!-- <p style="margin:0 0 24px;font-size:16px;line-height:1.8;max-width:760px">lorem ipsum lorem ipsum lorem ipsum</p> -->
+<div style="font-size:14px;color:#62626A;margin-bottom:20px">// Abuja, Nigeria</div>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><a class="ic" href="https://drive.google.com/file/d/1gVL1ssQuJdSGsp_yv_1jDldPFCP-dMD9/view?usp=share_link" target="_blank" rel="noopener" aria-label="Resume" title="Resume (PDF)" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;box-sizing:border-box;border:1px solid #E6E2D8;border-radius:50%;color:#18181B;text-decoration:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></a><a class="ic" href="mailto:onwukasamm@gmail.com" aria-label="Email" title="Email" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;box-sizing:border-box;border:1px solid #E6E2D8;border-radius:50%;color:#18181B;text-decoration:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a><a class="ic" href="https://linkedin.com/in/csonwuka" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;box-sizing:border-box;border:1px solid #E6E2D8;border-radius:50%;color:#18181B;text-decoration:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7v.01M12 17v-6.5M12 13.5a3 3 0 0 1 6 0V17"/></svg></a><a class="ic" href="https://github.com/csonwuka" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;box-sizing:border-box;border:1px solid #E6E2D8;border-radius:50%;color:#18181B;text-decoration:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a> <!-- <a class="ic" href="#" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;box-sizing:border-box;border:1px solid #E6E2D8;border-radius:50%;color:#18181B;text-decoration:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v5"/></svg></a> --> <a class="ic" href="https://x.com/csonwuka" target="_blank" rel="noopener" aria-label="X" title="X" style="display:flex;align-items:center;justify-content:center;width:44px;height:44px;box-sizing:border-box;border:1px solid #E6E2D8;border-radius:50%;color:#18181B;text-decoration:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16"/><path d="M20 4l-6.5 7.2M10.5 12.8L4 20"/></svg></a></div>
+</div></section>
+<div class="sect" id="about" style="display:flex;align-items:baseline;gap:16px;margin-top:40px;border-top:1px solid #E6E2D8;padding:40px 0 20px"><span style="font-size:14px;color:#62626A">01</span><h2 style="margin:0;font-size:22px;font-weight:500;letter-spacing:-0.02em"><span class="type scroll-type">about</span></h2></div>
+<div style="display:grid;gap:16px;font-size:16px;line-height:1.8;max-width:760px"><p style="margin:0">I'm an independent AI Researcher at ML Collective. My research focus is to build responsible and interpretable AI (or AGI) that effectively represents knowledge and sensory data especially in the context of world models.</p><p style="margin:0">I want to achieve this by designing frontier models that use internal world models to guide frontier models in understanding the physical world and ensuring that safety and alignment are a fundamental parts of such designs.</p><p style="margin:0">In my spare time, I play chess and read biographies.</p></div>
+<div class="sect" id="skills" style="display:flex;align-items:baseline;gap:16px;margin-top:72px;border-top:1px solid #E6E2D8;padding:40px 0 20px"><span style="font-size:14px;color:#62626A">02</span><h2 style="margin:0;font-size:22px;font-weight:500;letter-spacing:-0.02em"><span class="type scroll-type">skills</span></h2></div>
+<div style="padding:12px 0;display:flex;gap:24px;flex-wrap:wrap"><div style="font-size:14px;color:#62626A;width:240px;flex-shrink:0;padding-top:2px">// Languages</div><div style="flex:1 1 300px;font-size:16px;line-height:1.7">Python, SQL, JavaScript</div></div>
+<div style="padding:12px 0;display:flex;gap:24px;flex-wrap:wrap"><div style="font-size:14px;color:#62626A;width:240px;flex-shrink:0;padding-top:2px">// Machine learning</div><div style="flex:1 1 300px;font-size:16px;line-height:1.7">PyTorch, TensorFlow, OpenCV, Pandas, Numpy, Scikit-Learn, Matplotlib, Seaborn</div></div>
+<div style="padding:12px 0;display:flex;gap:24px;flex-wrap:wrap"><div style="font-size:14px;color:#62626A;width:240px;flex-shrink:0;padding-top:2px">// Deployment</div><div style="flex:1 1 300px;font-size:16px;line-height:1.7">Docker, GCP, FastAPI, Streamlit, Flask</div></div>
+
+<div class="sect" id="experience" style="display:flex;align-items:baseline;gap:16px;margin-top:72px;border-top:1px solid #E6E2D8;padding:40px 0 20px"><span style="font-size:14px;color:#62626A">03</span><h2 style="margin:0;font-size:22px;font-weight:500;letter-spacing:-0.02em"><span class="type scroll-type">experience</span></h2></div>
+<div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:16px 0"><div style="max-width:760px"><div style="font-size:17px;font-weight:500;line-height:1.4">Data Science | AI Facilitator</div><div style="font-size:14px;color:#62626A;margin-top:2px">Imperial ICT Hub · Delta, Nigeria</div><p style="margin:10px 0 0;font-size:14px;line-height:1.7">· Developed and curated learning materials, including notebooks and case studies focused on model experimentation</p><p style="margin:10px 0 0;font-size:14px;line-height:1.7">· Facilitated the implementation of end-to-end ML pipelines, from raw data processing to model evaluation and visualization</p><p style="margin:10px 0 0;font-size:14px;line-height:1.7">· Designed and delivered project-based training in artificial intelligence, machine learning, data science, and statistical
+modeling, emphasizing experimental thinking and real-world problem solving</p><p style="margin:10px 0 0;font-size:14px;line-height:1.7">· Mentored 15+ students in conducting controlled experiments, comparing model performance, and interpreting results using
+appropriate evaluation metrics.</p></div><span style="font-size:14px;color:#62626A;padding-top:3px;white-space:nowrap">Oct 2025 – Aug 2026</span></div>
+<div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:16px 0"><div style="max-width:760px"><div style="font-size:17px;font-weight:500;line-height:1.4">Machine Learning Engineer</div><div style="font-size:14px;color:#62626A;margin-top:2px">Carthago Studios · Barcelona, Spain (Remote)</div><p style="margin:10px 0 0;font-size:14px;line-height:1.7">· Developed and fine-tuned Large Language Models (LLMS) on specific domain datasets for client use, resulting in increased accuracy
+and reduced response time</p><p style="margin:10px 0 0;font-size:14px;line-height:1.7"></p><p style="margin:10px 0 0;font-size:14px;line-height:1.7">· Implemented NLP solutions for various tasks such as text classification, summarization, sentiment analysis, and question-answering,
+improving client workflows and data processing capabilities.</p><p style="margin:10px 0 0;font-size:14px;line-height:1.7">· Optimized model performance to reduce LLM inference latency by 20% while maintaining high model accuracy for client applications</p></div><span style="font-size:14px;color:#62626A;padding-top:3px;white-space:nowrap">Sep 2024 – Dec 2024</span></div>
+<div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:16px 0"><div style="max-width:760px"><div style="font-size:17px;font-weight:500;line-height:1.4">Data Science Tutor</div><div style="font-size:14px;color:#62626A;margin-top:2px">Algorithmics · Lagos, Nigeria</div><p style="margin:10px 0 0;font-size:14px;line-height:1.7">· Tutored children aged 7-17 years on Python and Data Science, teaching each student relevant coursework and equipping them
+with industry standard tools and materials for early career setup.</p><p style="margin:10px 0 0;font-size:14px;line-height:1.7">· Effectively taught and managed a minimum of 10 students per virtual session and assessing students’ work and tasks to confirm
+proper assimilation of course content.</p><p style="margin:10px 0 0;font-size:14px;line-height:1.7">· Reviewed the learning syllabus periodically and prepared new coursework for learners.</p></div><span style="font-size:14px;color:#62626A;padding-top:3px;white-space:nowrap">Jan 2024 – Dec 2024</span></div>
+
+<div class="sect" id="projects" style="display:flex;align-items:baseline;gap:16px;margin-top:72px;border-top:1px solid #E6E2D8;padding:40px 0 20px"><span style="font-size:14px;color:#62626A">04</span><h2 style="margin:0;font-size:22px;font-weight:500;letter-spacing:-0.02em"><span class="type scroll-type">projects</span></h2></div>
+<div style="padding:18px 0"><div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start"><div class="media" data-src="images/asg_logo.svg" data-alt="asg"></div><div style="flex:1 1 300px"><div style="display:flex;justify-content:space-between;gap:16px"><a href="https://omr-asg.streamlit.app" style="font-size:17px;font-weight:500;line-height:1.45;text-decoration:none">ASG</a><span style="font-size:14px;color:#62626A;white-space:nowrap;padding-top:2px">2026</span></div><div style="font-size:14px;line-height:1.7;margin-top:6px"><a href="#">Samuel Onwuka</a></div><p style="margin:10px 0 0;max-width:760px;font-size:15px;line-height:1.7;color:#62626A">Automatic OMR script marker and grader for schools and universities</p><div style="display:flex;gap:20px;margin-top:12px;font-size:14px"><a href="https://github.com/csonwuka/ASG" style="color:#62626A">code</a><a href="https://omr-asg.streamlit.app" style="color:#62626A">website</a></div></div></div></div>
+<!-- <div style="padding:18px 0"><div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start"><div class="media" data-src="images/project-2.jpg" data-alt="project 2"></div><div style="flex:1 1 300px"><div style="display:flex;justify-content:space-between;gap:16px"><a href="#" style="font-size:17px;font-weight:500;line-height:1.45;text-decoration:none">[Project two]</a><span style="font-size:14px;color:#62626A;white-space:nowrap;padding-top:2px">[2025]</span></div><div style="font-size:14px;line-height:1.7;margin-top:6px"><a href="#">[Your Name]</a>, <a href="#">[Co-author]</a>, <a href="#">[Co-author]</a></div><p style="margin:10px 0 0;max-width:760px;font-size:15px;line-height:1.7;color:#62626A">[One sentence: the problem and your approach.]</p><div style="display:flex;gap:20px;margin-top:12px;font-size:14px"><a href="#" style="color:#62626A">code</a><a href="#" style="color:#62626A">blog</a></div></div></div></div>
+<div style="padding:18px 0"><div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start"><div class="media" data-src="images/project-3.jpg" data-alt="project 3"></div><div style="flex:1 1 300px"><div style="display:flex;justify-content:space-between;gap:16px"><a href="#" style="font-size:17px;font-weight:500;line-height:1.45;text-decoration:none">[Project three]</a><span style="font-size:14px;color:#62626A;white-space:nowrap;padding-top:2px">[2024]</span></div><div style="font-size:14px;line-height:1.7;margin-top:6px"><a href="#">[Your Name]</a></div><p style="margin:10px 0 0;max-width:760px;font-size:15px;line-height:1.7;color:#62626A">[One sentence: your specific contribution.]</p><div style="display:flex;gap:20px;margin-top:12px;font-size:14px"><a href="#" style="color:#62626A">code</a><a href="#" style="color:#62626A">blog</a></div></div></div></div> -->
+
+<!-- <div class="sect" id="research" style="display:flex;align-items:baseline;gap:16px;margin-top:72px;border-top:1px solid #E6E2D8;padding:40px 0 20px"><span style="font-size:14px;color:#62626A">05</span><h2 style="margin:0;font-size:22px;font-weight:500;letter-spacing:-0.02em"><span class="type scroll-type">research</span></h2></div>
+<div style="padding:18px 0"><div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start"><div class="media" data-src="images/paper-1.jpg" data-alt="paper 1"></div><div style="flex:1 1 300px"><div style="display:flex;justify-content:space-between;gap:16px"><a href="#" style="font-size:17px;font-weight:500;line-height:1.45;text-decoration:none">[Title of your most recent paper]</a><span style="font-size:14px;color:#62626A;white-space:nowrap;padding-top:2px">[2026]</span></div><div style="font-size:14px;line-height:1.7;margin-top:6px"><a href="#">[Your Name]</a>, <a href="#">[Co-author]</a>, <a href="#">[Co-author]</a></div><p style="margin:10px 0 0;max-width:760px;font-size:15px;line-height:1.7;color:#62626A">[Venue] · [One sentence on the finding.]</p><div style="display:flex;gap:20px;margin-top:12px;font-size:14px"><a href="#" style="color:#62626A">paper</a><a href="#" style="color:#62626A">code</a><a href="#" style="color:#62626A">blog</a></div></div></div></div>
+<div style="padding:18px 0"><div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start"><div class="media" data-src="images/paper-2.jpg" data-alt="paper 2"></div><div style="flex:1 1 300px"><div style="display:flex;justify-content:space-between;gap:16px"><a href="#" style="font-size:17px;font-weight:500;line-height:1.45;text-decoration:none">[Title of an earlier paper]</a><span style="font-size:14px;color:#62626A;white-space:nowrap;padding-top:2px">[2025]</span></div><div style="font-size:14px;line-height:1.7;margin-top:6px"><a href="#">[Co-author]</a>, <a href="#">[Your Name]</a></div><p style="margin:10px 0 0;max-width:760px;font-size:15px;line-height:1.7;color:#62626A">[Journal] · [One sentence on the finding.]</p><div style="display:flex;gap:20px;margin-top:12px;font-size:14px"><a href="#" style="color:#62626A">paper</a><a href="#" style="color:#62626A">code</a><a href="#" style="color:#62626A">blog</a></div></div></div></div> -->
+
+<div class="sect" id="education" style="display:flex;align-items:baseline;gap:16px;margin-top:72px;border-top:1px solid #E6E2D8;padding:40px 0 20px"><span style="font-size:14px;color:#62626A">05</span><h2 style="margin:0;font-size:22px;font-weight:500;letter-spacing:-0.02em"><span class="type scroll-type">education</span></h2></div>
+<div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:16px 0"><div style="max-width:760px"><div style="font-size:17px;font-weight:500;line-height:1.4">BSc., Physics and Astronomy</div><div style="font-size:14px;color:#62626A;margin-top:2px">University of Nigeria · Nsukka, Nigeria</div><p style="margin:10px 0 0;font-size:15px;line-height:1.7">4.37/5.00 · Top 5%</p></div><span style="font-size:14px;color:#62626A;padding-top:3px;white-space:nowrap">Aug 2021 – Dec 2024</span></div>
+<div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:16px 0"><div style="max-width:760px"><div style="font-size:17px;font-weight:500;line-height:1.4">Secondary School Certificate</div><div style="font-size:14px;color:#62626A;margin-top:2px">St. Patrick's College · Asaba, Nigeria</div><p style="margin:10px 0 0;font-size:15px;line-height:1.7">Best Graduating Student '20 Set</p></div><span style="font-size:14px;color:#62626A;padding-top:3px;white-space:nowrap">Sep 2014 – Sep 2020</span></div>
+
+<!-- <div class="sect" id="blog" style="display:flex;align-items:baseline;gap:16px;margin-top:72px;border-top:1px solid #E6E2D8;padding:40px 0 20px"><span style="font-size:14px;color:#62626A">07</span><h2 style="margin:0;font-size:22px;font-weight:500;letter-spacing:-0.02em"><span class="type scroll-type">blog posts</span></h2></div>
+<div style="padding:18px 0"><div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start"><div class="media" data-src="images/post-1.jpg" data-alt="post 1"></div><div style="flex:1 1 300px"><div style="font-size:14px;color:#62626A">[Oct 5, 2026]</div><a href="#" style="display:inline-block;font-size:17px;font-weight:500;line-height:1.45;text-decoration:none;margin-top:6px">[Post title]</a><p style="margin:8px 0 0;max-width:760px;font-size:15px;line-height:1.7;color:#62626A">[One line on the argument or takeaway.]</p></div></div></div>
+<div style="padding:18px 0"><div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start"><div class="media" data-src="images/post-2.jpg" data-alt="post 2"></div><div style="flex:1 1 300px"><div style="font-size:14px;color:#62626A">[Jan 12, 2026]</div><a href="#" style="display:inline-block;font-size:17px;font-weight:500;line-height:1.45;text-decoration:none;margin-top:6px">[Post title]</a><p style="margin:8px 0 0;max-width:760px;font-size:15px;line-height:1.7;color:#62626A">[One line on the argument or takeaway.]</p></div></div></div>
+<div style="padding:18px 0"><div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start"><div class="media" data-src="images/post-3.jpg" data-alt="post 3"></div><div style="flex:1 1 300px"><div style="font-size:14px;color:#62626A">[Sep 3, 2025]</div><a href="#" style="display:inline-block;font-size:17px;font-weight:500;line-height:1.45;text-decoration:none;margin-top:6px">[Post title]</a><p style="margin:8px 0 0;max-width:760px;font-size:15px;line-height:1.7;color:#62626A">[One line on the argument or takeaway.]</p></div></div></div> -->
+
+<div class="sect" id="contact" style="display:flex;align-items:baseline;gap:16px;margin-top:72px;border-top:1px solid #E6E2D8;padding:40px 0 20px"><span style="font-size:14px;color:#62626A">06</span><h2 style="margin:0;font-size:22px;font-weight:500;letter-spacing:-0.02em"><span class="type scroll-type">contact</span></h2></div>
+<p style="margin:0 0 16px;font-size:16px;line-height:1.8;max-width:760px">I'm open to chat about about tech, the science of learning and frontier AI </p>
+<a href="mailto:onwukasamm@gmail.com" style="font-size:16px;font-weight:500">email me</a>
+<footer style="margin-top:72px;border-top:1px solid #E6E2D8;padding:32px 0 24px;font-size:14px;color:#62626A">©2026 Sam Onwuka</footer>
+</div>
+</div>
+
+<script>
+(function(){
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* Photos and videos: each .media box reads its file from data-src */
+document.querySelectorAll('.media[data-src]').forEach(function(box){
+  var src=box.getAttribute('data-src'), el;
+  if(/\.(mp4|webm|mov)$/i.test(src)){
+    el=document.createElement('video');
+    el.muted=true;el.loop=true;el.autoplay=true;el.playsInline=true;el.preload='metadata';
+    el.setAttribute('playsinline','');
+  }else{
+    el=document.createElement('img');
+    el.alt=box.getAttribute('data-alt')||'';el.loading='lazy';
+  }
+  el.addEventListener('error',function(){el.remove();});
+  el.src=src;box.appendChild(el);
+});
+
+/* Typing effect: cursor shows while typing, then disappears */
+function typeInto(el,speed,done){
+  var t=el.getAttribute('data-t')||el.textContent;
+  el.setAttribute('data-t',t);
+  if(reduce){el.textContent=t;if(done)done();return;}
+  el.textContent='\u200b';el.classList.add('caret');
+  var i=0;
+  (function step(){
+    i++;el.textContent=t.slice(0,i);
+    if(i<t.length){setTimeout(step,speed);}
+    else{el.classList.remove('caret');if(done)done();}
+  })();
+}
+var hero=[].slice.call(document.querySelectorAll('.hero-type'));
+hero.forEach(function(el){el.setAttribute('data-t',el.textContent);if(!reduce)el.textContent='\u200b';});
+setTimeout(function(){hero.forEach(function(el){typeInto(el,55);});},300);
+
+var titles=[].slice.call(document.querySelectorAll('.scroll-type'));
+titles.forEach(function(el){el.setAttribute('data-t',el.textContent);if(!reduce)el.textContent='\u200b';});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){io.unobserve(e.target);typeInto(e.target,70);}
+    });
+  },{threshold:1});
+  titles.forEach(function(el){io.observe(el);});
+}else{titles.forEach(function(el){el.textContent=el.getAttribute('data-t');});}
+
+/* Close the phone menu after tapping a link */
+var nt=document.getElementById('nt');
+document.querySelectorAll('.nav a').forEach(function(a){
+  a.addEventListener('click',function(){nt.checked=false;});
+});
+})();
+</script>
+</body>
+</html>
